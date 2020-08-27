@@ -9,3 +9,7 @@ const p = new Promise((resolve) => {
 p.then(() => {
 	console.log(11)
 })
+
+const a: string[] = []
+
+console.log(a)

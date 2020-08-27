@@ -2054,6 +2054,8 @@
   p.then(function () {
     console.log(11);
   });
+  var a = [];
+  console.log(a);
 
   return index;
 

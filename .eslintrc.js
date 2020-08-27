@@ -2,37 +2,36 @@
 
 module.exports = {
 	root: true,
-	parser: "@typescript-eslint/parser",
+	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 2019,
-		sourceType: "module",
+		sourceType: 'module',
 	},
 	env: {
-		node: true,
-		commonjs: true,
+		browser: true,
 	},
 	extends: [
-		"standard",
-		"plugin:@typescript-eslint/recommended",
-		"plugin:prettier/recommended",
+		'standard',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:prettier/recommended',
 	],
-	plugins: ["@typescript-eslint"],
+	plugins: ['@typescript-eslint'],
 	// add your custom rules here
 	rules: {
-		"arrow-parens": "off",
-		"comma-dangle": "off",
-		"eol-last": "off",
-		"generator-star-spacsing": "off",
-		"no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-		"no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-		"space-before-function-paren": [
-			"error",
+		'arrow-parens': 'off',
+		'comma-dangle': 'off',
+		'eol-last': 'off',
+		'generator-star-spacsing': 'off',
+		'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+		'space-before-function-paren': [
+			'error',
 			{
-				anonymous: "always",
-				named: "never",
-				asyncArrow: "always",
+				anonymous: 'always',
+				named: 'never',
+				asyncArrow: 'always',
 			},
 		],
-		"lines-between-class-members": "off",
+		'lines-between-class-members': 'off',
 	},
 }

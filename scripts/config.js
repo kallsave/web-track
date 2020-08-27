@@ -1,5 +1,4 @@
 const path = require('path')
-const typescript = require('rollup-plugin-typescript2')
 const nodeResolve = require('@rollup/plugin-node-resolve')
 const cjs = require('@rollup/plugin-commonjs')
 const replace = require('@rollup/plugin-replace')
@@ -43,7 +42,6 @@ const plugins = [
     include: 'src/**',
     extensions,
   }),
-  typescript(),
   babel({
     runtimeHelpers: true,
     extensions,
